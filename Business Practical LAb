@@ -1,1 +1,11 @@
 
+DataStage jobs consist of individual stages. Each stage describes a particular process, this might be accessing a database or transforming data in some way. The simplest jobs we could have: a data source, a Transformer (conversion) stage, and the final database.
+
+For example, one stage might extract data from a data source, while another transforms it. Stages are added to a job and linked together using the Designer.
+
+In a parallel job each stage would correspond to a process. You can have multiple instances of each process to run on the available processors in your system.
+Shows a data source inputting data to a transformer which outputs it to a data target You must specify the data you want at each stage, and how it is handled. 
+
+For example, do you want all the columns in the source data, or only a select few? Are you going to rename any of the columns? How are they going to be transformed?
+
+You lay down these stages and links on the canvas of the  DataStage Designer.  DataStage also allows you to store reusable components in the Repository which can be incorporated into different job designs. You can import these components, or entire jobs, from other InfoSphere DataStage Projects using the Designer. You can also import meta data directly from data sources and data targets.
